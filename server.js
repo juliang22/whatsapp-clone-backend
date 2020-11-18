@@ -3,11 +3,11 @@ import express from 'express'
 import Messages from './dbMessages.js'
 import Cors from 'cors'
 import Pusher from 'pusher'
+import MONGODB from './config.js'
 
 // app config
 const app = express()
 const port = process.env.PORT || 8000
-const MONGODB = 'mongodb+srv://main:user@cluster0.2lz3b.mongodb.net/whatsapp-db?retryWrites=true&w=majority'
 
 // middlewares
 app.use(express.json())
